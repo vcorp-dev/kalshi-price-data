@@ -9,7 +9,7 @@ client gives you the history instead, through a single endpoint.
 
 Public (no key): overview(), health().
 With a key (https://kalshipricedata.com/price-data): markets(), orderbook_latest(),
-snapshots(). Kalshi coverage starts on the Pro plan.
+snapshots(). Check current plan access at https://depthfeed.com/pricing.
 """
 
 from __future__ import annotations
@@ -66,7 +66,7 @@ class KalshiPriceData:
         """
         return self._get("/v3/demo")
 
-    # --- Kalshi markets / history (key; Pro plan) -------------------------
+    # --- Kalshi markets / history (key; account limits apply) -------------------------
 
     def markets(
         self,
